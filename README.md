@@ -17,7 +17,7 @@ Ever wondered what reviewers *really* mean when they write those cryptic comment
 **SEAGraph** is an intelligent framework that acts as your personal "review comment interpreter"! It doesn't just read review comments—it **unveils the underlying intentions, context, and research landscape** behind them.
 
 <div align="center">
-  <img src="asset/seagraph.pdf" alt="SEAGraph Framework" width="800"/>
+  <img src="asset/seagraph.png" alt="SEAGraph Framework" width="800"/>
   <p><i>The SEAGraph Framework: Connecting the dots between papers, reviews, and research context</i></p>
 </div>
 
@@ -31,7 +31,7 @@ SEAGraph constructs two powerful knowledge structures:
 By combining these graphs with intelligent retrieval, SEAGraph generates **coherent, context-aware explanations** that help you truly understand what reviewers are asking for!
 
 <div align="center">
-  <img src="asset/case.pdf" alt="Example Case" width="700"/>
+  <img src="asset/case.png" alt="Example Case" width="700"/>
   <p><i>See SEAGraph in action: Transforming vague comments into actionable insights</i></p>
 </div>
 
@@ -91,20 +91,6 @@ SEAGraph/
 
 Transform your paper and review comments into insightful explanations in **10 easy steps**:
 
-```mermaid
-graph LR
-    A[📄 PDF Paper] --> B[Parse PDF]
-    B --> C[Build SMG]
-    C --> D[Extract Comments]
-    D --> E[Search Related Papers]
-    E --> F[Infer Themes]
-    F --> G[Find Hot Papers]
-    G --> H[Process Background]
-    H --> I[Retrieve from SMG]
-    I --> J[Retrieve from HBG]
-    J --> K[✨ Generate Explanations]
-```
-
 | Step | Script | Description | 
 |------|--------|-------------|
 | 1️⃣ | `pdf_parse.py` | 📖 Parse your PDF into machine-readable format (MMD) |
@@ -153,23 +139,9 @@ python rag_seagraph.py --filename 5t44vPlv9x
 ## 📊 Performance Insights
 
 <div align="center">
-  <img src="asset/combined_comparison_heatmaps.pdf" alt="Performance Comparison" width="800"/>
+  <img src="asset/combined_comparison_heatmaps.png" alt="Performance Comparison" width="800"/>
   <p><i>SEAGraph performance across different metrics</i></p>
 </div>
-
----
-
-## 🎓 Input & Output
-
-### Input Requirements 📥
-
-- **Academic Paper**: PDF format (place in `data/paper_pdf/`)
-- **Review Comments**: TXT format (place in `data/raw_review/`)
-
-### Output 📤
-
-- **Review Explanations**: Comprehensive JSON format with context-aware insights
-- **Location**: `result/` directory
 
 ---
 
