@@ -1,0 +1,1 @@
+To save raw pdf of academic paper, please put it in the `data/paper_pdf/` folder.

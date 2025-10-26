@@ -1,0 +1,1 @@
+To save raw review, please put it in the `data/raw_review/` folder.
